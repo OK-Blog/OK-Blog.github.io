@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="KEI_VS02_01.css">
+</head>
+<body>
+    
+<div class="navigation">
+    <ul>
+        <li class="list active">
+            <a href="KEI_VS02_02.html">
+                <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                <span class="title">ホーム</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="#">
+                <span class="icon"><ion-icon name="walk-outline"></ion-icon></span>
+                <span class="title">こども薬局の室内</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="#">
+                <span class="icon"><ion-icon name="sad-outline"></ion-icon></span>
+                <span class="title">こども薬局の人数、役割</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="#">
+                <span class="icon"><ion-icon name="server-outline"></ion-icon></span>
+                <span class="title">こども薬局について</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="#">
+                <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                <span class="title">予約</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="#">
+                <span class="icon"><ion-icon name="help-circle-outline"></ion-icon></span>
+                <span class="title">ヘルプ</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="#">
+                <span class="icon"><ion-icon name="log-in-outline"></ion-icon></span>
+                <span class="title">サインアウト</span>
+            </a>
+        </li>
+       
+    </ul>
+</div>
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+    const list = document.querySelectorAll(".list")
+console.log(list);
+
+function activeLink() {
+    list.forEach(item => {
+        item.classList.remove("active");
+    })
+    this.classList.add("active")
+}
+
+list.forEach((item)=>{
+    item.addEventListener("click", activeLink)
+})
+</script>
+</body>
+</html>
