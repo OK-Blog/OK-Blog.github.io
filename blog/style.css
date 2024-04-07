@@ -1,0 +1,35 @@
+.sec-box {
+    position: relative;
+    margin: 1em 0;
+    padding: 0.5em 1em;
+    border: solid 3px #62c1ce;
+}
+.sec-box .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -27px;
+    left: -3px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 17px;
+    background: #62c1ce;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+}
+.sec-box p {
+    margin: 0; 
+    padding: 0;
+}
+
+.box1 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    border: solid 3px #000000;
+}
+.box1 p {
+    margin: 0; 
+    padding: 0;
+}
